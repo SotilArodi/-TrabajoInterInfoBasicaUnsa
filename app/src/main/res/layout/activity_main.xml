@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -41,17 +42,22 @@
             android:padding="15dp"
             android:layout_toStartOf="@id/sendButton"
             android:layout_alignParentStart="true"
-            android:hint="Ingrese consulta"
+            android:hint="@string/consult"
             android:imeOptions="actionDone"
             android:inputType="textShortMessage"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:layout_toLeftOf="@id/sendButton"
+            android:layout_alignParentLeft="true"
+            android:autofillHints="@string/consultText" />
 
         <Button
             android:id="@+id/sendButton"
             android:layout_width="70dp"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
-            android:hint="Enviar"/>
+            android:textColor="@color/white"
+            android:hint="@string/btnSend"
+            android:layout_alignParentRight="true" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
