@@ -3,4 +3,10 @@
     <string name="consult">Ingrese Consulta:</string>
     <string name="btnSend">Send</string>
     <string name="consultText">Consult</string>
+    <string name="CUI">CUI</string>
+    <string name="password">Password</string>
+    <string name="Logo1">UNSA</string>
+    <string name="BtnLogin">Login</string>
+    <string name="BtnNoUser">I am not student</string>
+    <string name="Logo2">Science</string>
 </resources>
