@@ -9,4 +9,7 @@
     <string name="BtnLogin">Login</string>
     <string name="BtnNoUser">I am not student</string>
     <string name="Logo2">Science</string>
+    <string name="soon">Activity Coming Soon</string>
+    <string name="soon2">Coming Soon</string>
+    <string name="btnSoon">Back</string>
 </resources>
