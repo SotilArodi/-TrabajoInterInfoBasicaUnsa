@@ -19,8 +19,11 @@
             android:id="@+id/messagesTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:scrollbarSize="16sp"/>
+            android:fontFamily="serif-monospace"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:scrollbarSize="16sp"
+            android:textColor="@color/white" />
 
     </ScrollView>
 
@@ -42,6 +45,7 @@
             android:padding="15dp"
             android:layout_toStartOf="@id/sendButton"
             android:layout_alignParentStart="true"
+            android:fontFamily="serif-monospace"
             android:hint="@string/consult"
             android:imeOptions="actionDone"
             android:inputType="textShortMessage"
@@ -55,6 +59,7 @@
             android:layout_width="70dp"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
+            android:fontFamily="serif-monospace"
             android:textColor="@color/white"
             android:hint="@string/btnSend"
             android:layout_alignParentRight="true" />
