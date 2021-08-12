@@ -7,7 +7,7 @@
     <string name="password">Password</string>
     <string name="Logo1">UNSA</string>
     <string name="BtnLogin">Login</string>
-    <string name="BtnNoUser">I am not student</string>
+    <string name="BtnNoUser">Registrarme</string>
     <string name="Logo2">Science</string>
     <string name="soon">Activity Coming Soon</string>
     <string name="soon2">Coming Soon</string>
@@ -16,4 +16,17 @@
     <string name="SignUp">Cree una cuenta con su CUI y Password</string>
     <string name="Registrar">Registrarse</string>
     <string name="chatbot">ChatBot</string>
+    <string name="Preguntas">Preguntas Frecuentes</string>
+    <string name="declaracionJurada">¿Por qué me rechazarían una declaración jurada?</string>
+    <string name="respDeclaracion">Porque probablemente está incompleta, es decir le falta nombre, apellido, DNI, firma o huella digital.
+Porque no coinciden los nombres y/o apellidos del postulantes con los que ha registrado en su inscripción.
+Porque la ha firmado el postulante siendo menor de edad
+Porque está marcando Padre o apoderado y corresponde al postulante o viceversa.
+Porque siendo mayor de edad están los datos del postulante pero la está firmando el padre o apoderado
+Porque la firma no es legible, debe ser clara y legible
+Porque la huella digital no es legible, esta tiene que ser clara y deben notarse los rasgos de la huella.</string>
+    <string name="cambioCarrera">¿Puedo cambiar de carrera para el Examen Ordinario II Fase 2020?</string>
+    <string name="respCarrera">El Reglamento de Admisión de la UNSA, NO permite realizar cambios de carrera.</string>
+    <string name="examenMicrofono">¿Puedo dar mi examen usando auriculares con micrófono incluido?</string>
+    <string name="respMicrofono">No, el micrófono y audio NO puede ser a través de auricular o sistema de manos libres, es decir debe ser audio y micro que trae incorporada la laptop o un micro y parlantes conectados a la computadora.</string>
 </resources>
