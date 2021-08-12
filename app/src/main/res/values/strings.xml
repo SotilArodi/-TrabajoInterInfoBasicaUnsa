@@ -12,4 +12,8 @@
     <string name="soon">Activity Coming Soon</string>
     <string name="soon2">Coming Soon</string>
     <string name="btnSoon">Back</string>
+    <string name="homeUnsa">Visite el portal oficial de la Unsa</string>
+    <string name="SignUp">Cree una cuenta con su CUI y Password</string>
+    <string name="Registrar">Registrarse</string>
+    <string name="chatbot">ChatBot</string>
 </resources>
