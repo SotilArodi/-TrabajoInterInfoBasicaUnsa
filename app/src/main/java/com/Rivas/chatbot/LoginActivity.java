@@ -68,7 +68,6 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Welcome", Toast.LENGTH_LONG).show();
             i2.putExtra("Id",ux.getId());
             startActivity(i2);
-            finish();
         } else {
             Toast.makeText(this, "Usuario y/o Password incorrectos", Toast.LENGTH_LONG).show();
             cui.setError("No coincide con contraseña o no está registrado");
@@ -78,6 +77,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void goToNoStudentActivity(){
         Intent intent = new Intent(this, RegisterActivity.class);
+        next.start();
         startActivity(intent);
     }
 }

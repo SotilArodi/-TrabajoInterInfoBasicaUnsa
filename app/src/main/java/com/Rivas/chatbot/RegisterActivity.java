@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity {
-    MediaPlayer back;
+    MediaPlayer back, next;
     private EditText cui, password;
     daoUsuario dao;
     private static final Pattern PASSWORD_PATTERN =
@@ -36,6 +36,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_no_student);
         back = MediaPlayer.create(this,R.raw.back);
+        next = MediaPlayer.create(this,R.raw.next);
         cui = findViewById(R.id.editTextTextEmailAddress);
         password = findViewById(R.id.editTextTextPassword2);
         dao = new daoUsuario(this);
@@ -44,6 +45,7 @@ public class RegisterActivity extends AppCompatActivity {
         Button button4 = findViewById(R.id.button4);
         button4.setOnClickListener(v -> {
             Intent i2 = new Intent(this,UnsaOficialActivity.class);
+            next.start();
             startActivity(i2);
         });
         button3.setOnClickListener((View v) -> goToLoginActivity());
@@ -80,5 +82,6 @@ public class RegisterActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LoginActivity.class);
         back.start();
         startActivity(intent);
+        finish();
     }
 }
