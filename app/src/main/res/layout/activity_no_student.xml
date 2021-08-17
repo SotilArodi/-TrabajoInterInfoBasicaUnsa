@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/soon"
-    tools:context=".NoStudentActivity">
+    tools:context=".RegisterActivity">
 
     <Button
         android:id="@+id/button3"

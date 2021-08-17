@@ -1,20 +1,18 @@
 package com.Rivas.chatbot;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.net.URI;
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.regex.Pattern;
 
-public class NoStudentActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
     MediaPlayer back;
     private EditText cui, password;
     daoUsuario dao;
@@ -33,7 +31,6 @@ public class NoStudentActivity extends AppCompatActivity {
                     "(?=\\S+$)" +
                     ".{8,}" +
                     "$");
-    private String url = "https://www.unsa.edu.pe/";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,8 +43,7 @@ public class NoStudentActivity extends AppCompatActivity {
         Button btnSignUp = findViewById(R.id.button5);
         Button button4 = findViewById(R.id.button4);
         button4.setOnClickListener(v -> {
-            Uri link = Uri.parse(url);
-            Intent i2 = new Intent(Intent.ACTION_VIEW,link);
+            Intent i2 = new Intent(this,UnsaOficialActivity.class);
             startActivity(i2);
         });
         button3.setOnClickListener((View v) -> goToLoginActivity());
@@ -66,7 +62,7 @@ public class NoStudentActivity extends AppCompatActivity {
                 Toast.makeText(this, "ERROR: Contraseña muy débil", Toast.LENGTH_LONG).show();
                 password.setError("Minimo: 1 minúscula, 1 mayúscula, 1 símbolo, 1 dígito y 6 caracteres");
             }else if (dao.insertUsuario(u)){
-                Intent i2 = new Intent(NoStudentActivity.this, LoginActivity.class);
+                Intent i2 = new Intent(RegisterActivity.this, LoginActivity.class);
                 cui.setError(null);
                 password.setError(null);
                 Toast.makeText(this, "Registro Exitoso", Toast.LENGTH_LONG).show();
